@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+          margin-left: 500px;
+          color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="a1">
+        <h1>JS-Handson1 <br>
+            Operators and Expressions</h1>
+    </div>
+    <h3>1.You are provided with two numbers Aand B. Your task is to add these two numbers.</h3>
+    <pre  style="color: blue;">
+        const AddTwoNumbers = (a,b) => {
+            let output=a+b;
+
+        return output;
+        }; 
+    </pre>
+    <h3>2.You are given two number first as A and second as Band check if both conditions (A<10and A>B) are satisfied or not with the help of operators</h3>
+    <pre style="color: blue;">
+        const Is_Valid = (a,b) => {
+            if(a<10 && a>b)
+            {
+              return (true);
+            }
+            else
+            {
+              return(false);
+            }
+
+           };
+    </pre>
+    <h3>3.You are given two numbers A and B. You need to do the following checks</h3>
+    <pre style="color: blue;">
+        const Check = (A, B) => 
+{
+  if(A % 10 === 0  || B % 10 === 0)
+  {
+    return (true)
+
+  }
+
+  else ( A % 10 !== 0 || B % 10!== 0)
+  {
+    return (false)
+  }
+
+
+
+};
+    </pre>
+<h3>4.You are provided a four digit number N only. Your task is to print out the first digit of that number.</h3>
+<pre style="color: blue;">
+    const First_Digit = (n) => {
+        let a=n/1000;
+         return (Math.floor(a));
+
+ }
+</pre>
+<h3>5.You are provided a four digit number N only. Your task is to print out the last digit of that number.</h3>
+<pre style="color: blue;">
+    const Last_Digit = (n) => {
+        return n%10;
+   };
+</pre>
+<h3>6.You are provided with two numbers A and B where A as  divisor and B as  dividend.Your task is find the remainder.</h3>
+<pre style="color: blue;">
+    const Find_the_remainder = (a,b) => {
+        let c=b%a;
+            return c; 
+    };
+
+</pre>
+<h3>7.You are provided with two numbers  A and B . Your task is to multiply these two numbers.</h3>
+<pre style="color: blue;">
+    const Multiply_two_number = (a,b) => {
+        let output=a*b;
+        return output;
+    };
+</pre>
+<h3>8.Shyam has got his marks in three subjects as A, B, and C (out of 100).Write a program to calculate his total marks and his average.</h3>
+<pre style="color: blue;">
+    const Sum = (A, B, C) => 
+{
+ let output=A+B+C;
+ return output
+};
+
+const Average = (A, B, C) => 
+{
+ return(A+B+C)/3;
+};
+
+</pre>
+</body>
+</html>
